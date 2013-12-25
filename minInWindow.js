@@ -40,7 +40,7 @@ function test() {
     && f(2) == 1 // 1,2, min = 1
     && f(3) == 1 // 1,2,3, min = 1
     && f(4) == 2 // 2,3,4, min = 2
-    && f() == 2)) { // 2,3,4, min = 3
+    && f() == 2)) { // 2,3,4, min = 2
     throw "fail";
   }
   var f = minInWindow(3, function(a,b) {return a-b;}); // with a comparison function
@@ -49,7 +49,7 @@ function test() {
     && f(2) == 1 // 1,2, min = 1
     && f(3) == 1 // 1,2,3, min = 1
     && f(4) == 2 // 2,3,4, min = 2
-    && f() == 2)) { // 2,3,4, min = 3
+    && f() == 2)) { // 2,3,4, min = 2
     throw "fail";
   }
   return alert("pass");
